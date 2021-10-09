@@ -1,5 +1,5 @@
 # PHPQuery
-https://github.com/TobiaszCudnik/phpquery
+来自https://github.com/TobiaszCudnik/phpquery
 
 <br>
 phpQuery是一个基于PHP的服务端开源项目，它可以让PHP开发人员轻松处理DOM文档内容。更有意思的是，它采用了jQuery的思想，使得可以像使用jQuery一样处理页面内容，获取想要的页面信息。<br>
