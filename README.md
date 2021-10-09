@@ -67,20 +67,22 @@ pq(); 相当于 jQuery的$();。
  * *选择所有元素。
  * selector1, selector2, selectorN 根据所有制定的选择器匹配结合结果 选择结果是取并集
 
-   ```plain
+```plain
     1)  #id                     pq("#myDiv");
     2)  element                 pq("div"); 
     3)  .class                  pq(".myClass"); 
     4)  *                       pq("*") 
     5)  selector1,selectorN     pq("div,span,p.myClass") 
 ```
+
 #### 层次选择器
+
  * ancestor descendant 匹配由先祖指定的元素的后代指定的所有后代元素。
  * parent > child 匹配由父元素指定的子元素指定的所有子元素。
  * prev + next 根据指定的”next”和指定的”prev”匹配所有的下一个元素。
  * prev ~ siblings 匹配根据”prev” 元素的 所有相邻元素。 
 
-    ```plain
+```plain
     1)  ancestor descendant     pq("form input") 
     2)  parent > child          pq("form > input") 
     3)  prev + next             pq("label + input") 
@@ -241,7 +243,7 @@ pq(); 相当于 jQuery的$();。
     1) val()                   pq("input")->val();
     2) val(val)                pq("input")->val("hello world!");
 ```
-#### 其他筛选和文档处理
+#### 其他筛选
  ```plain
  1)  eq(index)               pq("p")->eq(1)
 2)  hasClass(class)         pq("div")->hasClass("protected")
@@ -269,7 +271,10 @@ pq(); 相当于 jQuery的$();。
 20) andSelf()               pq("div")->find("p")->andSelf()->addClass("border");
 21) end()                   pq("p")->find("span")->end()
 
-\*文档处理*\
+```
+
+### 文档处理
+```plain
 1)  append(content)         pq("p")->append("<b>Hello</b>");
 2)  appendTo(content)       pq("p")->appendTo("#foo");
 3)  prepend(content)        pq("p")->prepend("<b>Hello</b>");
